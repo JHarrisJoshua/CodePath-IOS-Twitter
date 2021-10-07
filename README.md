@@ -27,6 +27,6 @@ the app is called "Codepath Tweet Tweet" on the Twitter developer site.
 Here's a walkthrough of implemented user stories:
 
 
-![](![](https://github.com/JHarrisJoshua/Images/blob/main/Twitter1.gif))
+![](https://github.com/JHarrisJoshua/Images/blob/main/Twitter1_1.gif)
 ![](https://github.com/JHarrisJoshua/Images/blob/main/Twitter1.gif)
 
