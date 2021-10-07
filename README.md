@@ -24,7 +24,7 @@ the app is called "Codepath Tweet Tweet" on the Twitter developer site.
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented user stories:
+Here are walkthroughs of implemented user stories:
 
 
 ![](https://github.com/JHarrisJoshua/Images/blob/main/Twitter1_1.gif)
