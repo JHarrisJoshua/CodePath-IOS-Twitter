@@ -22,6 +22,8 @@ class HomeTableViewController: UITableViewController {
         loadTweet()
         myRefreshControl.addTarget(self, action: #selector(loadTweet), for: .valueChanged)
         tableView.refreshControl = myRefreshControl
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 150
 
         
         // Uncomment the following line to preserve selection between presentations
@@ -33,15 +35,8 @@ class HomeTableViewController: UITableViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-
-        myRefreshControl.addTarget(self, action: #selector(loadTweet), for: .valueChanged)
-        tableView.refreshControl = myRefreshControl
-        tableView.reloadData()
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: loadTweet)
-        myRefreshControl.addTarget(self, action: #selector(loadTweet), for: .valueChanged)
-        tableView.refreshControl = myRefreshControl
-        tableView.reloadData()
+        loadTweet()
         
     }
 
@@ -123,8 +118,16 @@ class HomeTableViewController: UITableViewController {
             if let imageData = data {
                 cell.profileImageView.image = UIImage(data: imageData)
             }
+            cell.setFavorite(tweetArray[indexPath.row]["favorited"] as! Bool)
+            cell.tweetID = tweetArray[indexPath.row]["id"] as! Int
+            cell.setRetweeted(tweetArray[indexPath.row]["retweeted"] as! Bool)
+            
+            
+            
         }
 
+
+        
         return cell
     }
     
