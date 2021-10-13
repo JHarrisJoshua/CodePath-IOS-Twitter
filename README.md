@@ -28,7 +28,7 @@ Here's a walkthrough of implemented user stories:
 
 This is a basic twitter app to read your tweets.
 
-Time spent: so many hours spent in total
+Time spent: **2** hours spent in total
 
 ## User Stories
 
