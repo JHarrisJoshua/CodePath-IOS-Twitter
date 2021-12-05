@@ -1,6 +1,6 @@
 # Twitter
 
-This is a basic twitter app that allows the user to view, compose, favorite, and retweet tweets using the Twitter API.
+Twitter-like app that allows the user to view, compose, favorite, and retweet tweets using the Twitter API.
 
 ## User Stories
 
